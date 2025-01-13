@@ -1,0 +1,143 @@
+/* Course Container Styles */
+.course-container {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 2rem;
+}
+
+.course-container h1 {
+    color: #2563eb;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.course-container h1 i {
+    color: #e34f26; /* HTML5 color */
+}
+
+/* Course Content Layout */
+.course-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+/* Course Description Styles */
+.course-description {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.course-description h2 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.course-description h3 {
+    color: #334155;
+    margin: 1.5rem 0 1rem;
+}
+
+.course-description ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.course-description li {
+    margin-bottom: 0.5rem;
+    color: #475569;
+}
+
+/* Course Section Styles */
+.course-section {
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e2e8f0;
+}
+
+.course-section:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* HTML Section Specific */
+#html h1 i {
+    color: #e34f26; /* HTML5 color */
+}
+
+/* CSS Section Specific */
+#css h1 i {
+    color: #264de4; /* CSS3 color */
+}
+
+/* Download Section Styles */
+.download-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.download-section h2 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.download-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+}
+
+.download-card h3 {
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+.download-card p {
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+.download-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.download-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-container {
+        padding: 1rem;
+        margin-top: 60px;
+    }
+
+    .course-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .course-container h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freemium - Free Programming Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Freemium</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#references" class="nav-link">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" style="background-image: url('images/header-bg.jpg'); background-size: cover; background-position: center; height: 100vh;">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Learn Programming for Free</h1>
+                <p>Access high-quality programming notes and resources - 100% Free Forever!</p>
+                <a href="#courses" class="cta-btn">Start Learning</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+                <p>Learn HTML fundamentals and structure</p>
+                <a href="courses/html-css.html" class="course-link">View Notes</a>
+            </div>
+            <div class="course-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <p>Master web styling and design</p>
+                <a href="courses/css.html" class="course-link">View Notes</a>
+            </div>
+            <div class="course-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Learn modern JavaScript programming</p>
+                <a href="courses/javascript.html" class="course-link">View Notes</a>
+            </div>
+            <div class="course-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p>Start your journey with Python</p>
+                <a href="courses/python.html" class="course-link">View Notes</a>
+            </div>
+            <div class="course-card">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+                <p>Comprehensive Java programming</p>
+                <a href="courses/java.html" class="course-link">View Notes</a>
+            </div>
+            <div class="course-card">
+                <i class="fas fa-code"></i>
+                <h3>C Language</h3>
+                <p>Learn fundamental C programming</p>
+                <a href="courses/c.html" class="course-link">View Notes</a>
+            </div>
+            <div class="course-card">
+                <i class="fas fa-code"></i>
+                <h3>C++</h3>
+                <p>Master object-oriented programming</p>
+                <a href="courses/cpp.html" class="course-link">View Notes</a>
+            </div>
+            <div class="course-card">
+                <i class="fas fa-code"></i>
+                <h3>C#</h3>
+                <p>Build applications with C#</p>
+                <a href="courses/csharp.html" class="course-link">View Notes</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="references" class="references-section">
+        <div class="container">
+            <h2>Course References</h2>
+            <button class="reference-btn" id="showReferences">
+                <i class="fas fa-book-open"></i>
+                View Course References
+            </button>
+            <div class="references-modal" id="referencesModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Course References & Resources</h3>
+                        <button class="close-btn" id="closeReferences">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="references-list">
+                        <div class="reference-category">
+                            <h4>Web Development</h4>
+                            <ul>
+                                <li><a href="#" target="_blank">MDN Web Docs</a></li>
+                                <li><a href="#" target="_blank">W3Schools</a></li>
+                                <li><a href="#" target="_blank">JavaScript.info</a></li>
+                            </ul>
+                        </div>
+                        <div class="reference-category">
+                            <h4>Data Science</h4>
+                            <ul>
+                                <li><a href="#" target="_blank">Kaggle Datasets</a></li>
+                                <li><a href="#" target="_blank">Python Documentation</a></li>
+                                <li><a href="#" target="_blank">Scikit-learn Docs</a></li>
+                            </ul>
+                        </div>
+                        <div class="reference-category">
+                            <h4>Mobile Development</h4>
+                            <ul>
+                                <li><a href="#" target="_blank">Android Developers</a></li>
+                                <li><a href="#" target="_blank">iOS Developer Portal</a></li>
+                                <li><a href="#" target="_blank">Flutter Documentation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@freemium.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Freemium. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
